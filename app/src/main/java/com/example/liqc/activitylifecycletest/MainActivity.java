@@ -9,9 +9,12 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d(TAG, "onCreate");
         setContentView(R.layout.activity_main);
         Button startNormalActivity = (Button)findViewById(R.id.start_normal_activity);
         Button startDialogActivity = (Button)findViewById(R.id.start_dialog_activity);
